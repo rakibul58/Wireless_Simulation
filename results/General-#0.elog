@@ -1,0 +1,88 @@
+SB ov 1536 ev 2 rid General-0-20230315-11:35:28-13812
+
+E # 0 t 0 m 1 ce -1 msg -1
+MC id 1 c omnetpp::cModule t Network n Network cm 1
+MDC id 1 d bgb=327,200
+MC id 2 c server t server pid 1 n Server
+GC m 2 g 0 n radioIn o 0
+MDC id 2 d i=device/wifilaptop;p=56,85
+MC id 3 c client t client pid 1 n Client
+GC m 3 g 0 n radioIn o 0
+MDC id 3 d i=device/wifilaptop;p=246,88
+CMB sm 1 tm 2 m initialize(0)
+CME
+CMB sm 1 tm 3 m initialize(0)
+- INFO: client initialize
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n "Client To Server" pe -1
+CL id 1 tid 0 eid 1 etid 0 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 0
+BS id 1 tid 0 eid 1 etid 0 c omnetpp::cMessage n "Client To Server" sm 3 st 0 am 3 at 0.548813502304 pe 0
+ES id 1 tid 0 eid 1 etid 0 c omnetpp::cMessage n "Client To Server" sm 3 st 0 am 3 at 0.548813502304 pe 0
+- INFO: client initialize complete
+CME
+
+E # 1 t 0.548813502304 m 3 ce 0 msg 1
+- INFO: client handle message initialize
+CM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "Client To Server" pe -1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "Client To Server" m 3 pe 1
+SD sm 3 dm 2 dg 0
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 2 ag 0 at 0.548813502304 pe 1
+CL id 3 tid 2 eid 3 etid 2 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 2
+CL id 3 tid 2 eid 3 etid 2 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 2
+BS id 3 tid 2 eid 3 etid 2 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.141658118693 pe 1
+ES id 3 tid 2 eid 3 etid 2 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.141658118693 pe 1
+
+E # 2 t 0.548813502304 m 2 ce 1 msg 2
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "Server to Client" pe -1
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "Server to Client" m 2 pe 2
+SD sm 2 dm 3 dg 0
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n "Server to Client" sm 2 st 0.548813502304 am 3 ag 0 at 0.548813502304 pe 2
+CL id 5 tid 4 eid 5 etid 4 c omnetpp::cMessage n "Server to Client" m 2 pe -1 cid 4
+
+E # 3 t 0.548813502304 m 3 ce 2 msg 4
+- INFO: client handle message initialize
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "Client To Server" pe -1
+BS id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "Client To Server" m 3 pe 3
+SD sm 3 dm 2 dg 0
+ES id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 2 ag 0 at 0.548813502304 pe 3
+CL id 6 tid 5 eid 6 etid 5 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 5
+CL id 6 tid 5 eid 6 etid 5 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 5
+BS id 6 tid 5 eid 6 etid 5 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.264002867276 pe 3
+ES id 6 tid 5 eid 6 etid 5 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.264002867276 pe 3
+
+E # 4 t 0.548813502304 m 2 ce 3 msg 5
+CM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "Server to Client" pe -1
+BS id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "Server to Client" m 2 pe 4
+SD sm 2 dm 3 dg 0
+ES id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n "Server to Client" sm 2 st 0.548813502304 am 3 ag 0 at 0.548813502304 pe 4
+CL id 8 tid 7 eid 8 etid 7 c omnetpp::cMessage n "Server to Client" m 2 pe -1 cid 7
+
+E # 5 t 0.548813502304 m 3 ce 4 msg 7
+- INFO: client handle message initialize
+CM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "Client To Server" pe -1
+BS id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "Client To Server" m 3 pe 5
+SD sm 3 dm 2 dg 0
+ES id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 2 ag 0 at 0.548813502304 pe 5
+CL id 9 tid 8 eid 9 etid 8 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 8
+CL id 9 tid 8 eid 9 etid 8 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 8
+BS id 9 tid 8 eid 9 etid 8 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.393079246394 pe 5
+ES id 9 tid 8 eid 9 etid 8 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.393079246394 pe 5
+
+E # 6 t 0.548813502304 m 2 ce 5 msg 8
+CM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "Server to Client" pe -1
+BS id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "Server to Client" m 2 pe 6
+SD sm 2 dm 3 dg 0
+ES id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n "Server to Client" sm 2 st 0.548813502304 am 3 ag 0 at 0.548813502304 pe 6
+CL id 11 tid 10 eid 11 etid 10 c omnetpp::cMessage n "Server to Client" m 2 pe -1 cid 10
+
+E # 7 t 0.548813502304 m 3 ce 6 msg 10
+- INFO: client handle message initialize
+CM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "Client To Server" pe -1
+BS id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "Client To Server" m 3 pe 7
+SD sm 3 dm 2 dg 0
+ES id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 2 ag 0 at 0.548813502304 pe 7
+CL id 12 tid 11 eid 12 etid 11 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 11
+CL id 12 tid 11 eid 12 etid 11 c omnetpp::cMessage n "Client To Server" m 3 pe -1 cid 11
+BS id 12 tid 11 eid 12 etid 11 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.151576872682 pe 7
+ES id 12 tid 11 eid 12 etid 11 c omnetpp::cMessage n "Client To Server" sm 3 st 0.548813502304 am 3 at 1.151576872682 pe 7
+
+SE e 0 c 10 m "The user has finished the simulation -- at t=0.548813502304s, event #7"
